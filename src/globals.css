@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  html {
+    @apply h-full scroll-smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased h-full overflow-x-hidden bg-gray-50 dark:bg-gray-900;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply h-1;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 hover:bg-gray-500 dark:bg-gray-600 dark:hover:bg-gray-700 rounded-full cursor-pointer;
+  }
+}
